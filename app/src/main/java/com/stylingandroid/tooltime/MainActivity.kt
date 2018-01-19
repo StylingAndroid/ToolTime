@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
                 replaceFragment(Part1Fragment::class.java.canonicalName)
                 true
             }
+            R.id.navigation_two -> {
+                replaceFragment(Part2Fragment::class.java.canonicalName)
+                true
+            }
             else -> false
         }
     }

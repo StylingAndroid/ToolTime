@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "city": "Hemel Hempstead, Hertfordshire, UK",
+      "avatar": "@sample/avatars"
+    },
+    {
+      "city": "Brokenwind, Aberdeenshire, UK",
+      "avatar": "@sample/avatars"
+    },
+    {
+      "city": "Málaga, España",
+      "avatar": "@sample/avatars"
+    },
+    {
+      "city": "Batchelors Bump, Essex, UK",
+      "avatar": "@sample/avatars"
+    }
+  ]
+}
