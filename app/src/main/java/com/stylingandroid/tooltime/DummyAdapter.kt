@@ -1,15 +1,16 @@
 package com.stylingandroid.tooltime
 
+import android.support.annotation.LayoutRes
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class Part1Adapter : RecyclerView.Adapter<Part1Adapter.ViewHolder>() {
+class DummyAdapter(@LayoutRes private val layoutId: Int) : RecyclerView.Adapter<DummyAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder? =
         parent?.context?.run {
             LayoutInflater.from(this).run {
-                inflate(R.layout.item_part1, parent, false).let {
+                inflate(layoutId, parent, false).let {
                     ViewHolder(it)
                 }
             }

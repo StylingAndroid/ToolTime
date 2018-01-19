@@ -16,7 +16,7 @@ class Part1Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recycler_view?.apply {
-            adapter = Part1Adapter()
+            adapter = DummyAdapter(R.layout.item_part1)
             layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
         }
     }
