@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/avatar"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:contentDescription="@null"
+    app:layout_constraintDimensionRatio="h,1:1"
+    app:layout_constraintEnd_toStartOf="@id/name"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintHorizontal_weight="1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/name"
+    tools:src="@tools:sample/avatars" />
+
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:layout_constraintBottom_toTopOf="@+id/city"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_weight="5"
+    app:layout_constraintStart_toEndOf="@id/avatar"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    tools:text="@tools:sample/full_names" />
+
+  <TextView
+    android:id="@+id/city"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:layout_constraintBottom_toTopOf="@id/description"
+    app:layout_constraintEnd_toStartOf="@id/date"
+    app:layout_constraintHorizontal_chainStyle="spread_inside"
+    app:layout_constraintStart_toEndOf="@id/avatar"
+    app:layout_constraintTop_toBottomOf="@+id/name"
+    tools:text="@tools:sample/cities" />
+
+  <TextView
+    android:id="@+id/date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="end"
+    app:layout_constraintBaseline_toBaselineOf="@id/city"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/city"
+    tools:text="@tools:sample/date/ddmmyy" />
+
+  <TextView
+    android:id="@+id/description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:ellipsize="end"
+    android:maxLines="3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/avatar"
+    app:layout_constraintTop_toBottomOf="@+id/city"
+    tools:text="@tools:sample/lorem/random" />
+
+</android.support.constraint.ConstraintLayout>
